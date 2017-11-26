@@ -6,7 +6,7 @@
         nuxt-i18n-example
       </h1>
       <h2 class="subtitle">
-        nuxt-i18n showcase project based on nuxt-starter template
+        {{ $t('homepage.subtitle') }}
       </h2>
       <div class="links">
         <a href="https://github.com/paulgv/nuxt-i18n" target="_blank" class="button--grey">GitHub</a>
@@ -30,7 +30,7 @@ export default {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
   display: block;
   font-weight: 300;
-  font-size: 100px;
+  font-size: 80px;
   color: #35495e;
   letter-spacing: 1px;
   text-align: center;
@@ -46,5 +46,25 @@ export default {
 
 .links {
   padding-top: 15px;
+}
+
+@media (max-width: 991px) {
+  .title {
+    font-size: 50px;
+  }
+
+  .subtitle {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
 }
 </style>

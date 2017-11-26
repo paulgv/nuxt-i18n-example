@@ -3353,9 +3353,9 @@ number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
 
-nuxt-i18n@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/nuxt-i18n/-/nuxt-i18n-0.0.1.tgz#a93fd05558c2080df07cdb9d3e63902b8e79e5d4"
+nuxt-i18n@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/nuxt-i18n/-/nuxt-i18n-0.1.0.tgz#168868bf29cc598ef00e30db75638e24474f2c01"
   dependencies:
     lodash "^4.17.4"
     vue-i18n "^7.3.2"

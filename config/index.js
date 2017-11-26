@@ -23,7 +23,6 @@ const I18N = {
     }
   ],
   defaultLocale: 'en',
-  fallbackLocale: 'en',
   routes: {
     about: {
       fr: '/a-propos',
@@ -37,7 +36,10 @@ const I18N = {
       es: '/articulo/:id?'
     }
   },
-  messages: { en, fr, es }
+  vueI18n: {
+    fallbackLocale: 'en',
+    messages: { en, fr, es }
+  }
 }
 
 module.exports = {

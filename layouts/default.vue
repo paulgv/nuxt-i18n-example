@@ -49,6 +49,10 @@ body {
   margin: 0;
 }
 
+.nuxt-progress {
+  z-index: 10;
+}
+
 h1 {
   text-align: left;
   margin-bottom: 20px;
@@ -83,6 +87,7 @@ header a {
 }
 
 .container {
+  min-height: 100vh;
   width: 70%;
   display: flex;
   justify-content: center;
