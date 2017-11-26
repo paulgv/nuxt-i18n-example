@@ -1,6 +1,6 @@
 # nuxt-i18n-example
 
-> nuxt-i18n showcase project based on nuxt-starter template
+> [nuxt-i18n](https://github.com/paulgv/nuxt-i18n) showcase project based on nuxt-starter template
 
 [https://nuxt-i18n-example-yqzcfckpwx.now.sh](https://nuxt-i18n-example-yqzcfckpwx.now.sh)
 
