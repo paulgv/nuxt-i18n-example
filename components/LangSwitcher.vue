@@ -3,7 +3,7 @@
     <nuxt-link
       v-for="(locale, i) in showLocales"
       :key="i"
-      :to="getSwitchLocaleRoute(locale.code)">
+      :to="switchLocalePath(locale.code)">
       {{ locale.name }}
     </nuxt-link>
   </span>
@@ -20,7 +20,7 @@ export default {
       'currentLocale'
     ]),
     showLocales () {
-      return this.locales.filter(locale => locale.code !== this.currentLocale)
+      return this.$i18n.locales.filter(locale => locale.code !== this.$i18n.locale)
     }
   }
 }

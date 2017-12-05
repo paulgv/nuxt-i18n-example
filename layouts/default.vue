@@ -2,13 +2,13 @@
   <div>
     <header>
       <nav>
-        <nuxt-link :to="getLocalizedRoute('index')">
+        <nuxt-link :to="localePath('index')">
           {{ $t('home') }}
         </nuxt-link>
-        <nuxt-link :to="getLocalizedRoute('posts')">
+        <nuxt-link :to="localePath('posts')">
           {{ $t('posts') }}
         </nuxt-link>
-        <nuxt-link :to="getLocalizedRoute('about')">
+        <nuxt-link :to="localePath('about')">
           {{ $t('about') }}
         </nuxt-link>
         <LangSwitcher />

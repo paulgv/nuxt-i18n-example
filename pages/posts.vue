@@ -7,7 +7,7 @@
           <div class="id">{{ post.id }}</div>
           <div class="title">
             <nuxt-link
-              :to="getLocalizedRoute({
+              :to="localePath({
                 name: 'post-id',
                 params: { id: post.id }
               })">
@@ -19,7 +19,7 @@
       <ul class="pagination">
         <li v-for="(page, i) in pagination">
           <nuxt-link
-            :to="getLocalizedRoute({
+            :to="localePath({
               name: 'posts',
               query: {
                 page: i + 1
