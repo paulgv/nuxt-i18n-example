@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^4.5.0",
-    "nuxt": "^1.0.0-rc11",
+    "nuxt": "^1.1.1",
     "nuxt-i18n": "^1.0.0"
   },
   "devDependencies": {
