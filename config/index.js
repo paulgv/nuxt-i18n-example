@@ -24,16 +24,19 @@ const I18N = {
   ],
   defaultLocale: 'en',
   routes: {
-    about: {
+    'about': {
       fr: '/a-propos',
       en: '/about-us'
     },
-    posts: {
+    'posts': {
       fr: '/articles'
     },
-    'post-id': {
+    'post/_id': {
       fr: '/article/:id?',
       es: '/articulo/:id?'
+    },
+    'dynamicNested/_category': {
+      fr: 'imbrication-dynamique/:category'
     }
   },
   vueI18n: {
