@@ -3,28 +3,34 @@
     <div v-if="posts">
       <h1>{{ $t('posts') }}</h1>
       <ul class="posts">
-        <li v-for="post in showPosts">
-          <div class="id">{{ post.id }}</div>
+        <li v-for="post in showPosts" :key="`post-${post.id}`">
+          <div class="id">
+            {{ post.id }}
+          </div>
           <div class="title">
             <nuxt-link
               :to="localePath({
                 name: 'post-id',
                 params: { id: post.id }
-              })">
+              })"
+            >
               {{ post.title }}
             </nuxt-link>
           </div>
         </li>
       </ul>
       <ul class="pagination">
-        <li v-for="(page, i) in pagination">
+        <li v-for="(page, i) in pagination" :key="`pagination-item-${i}`">
           <nuxt-link
             :to="localePath({
               name: 'posts',
               query: {
                 page: i + 1
               }
-            })">{{ i + 1 }}</nuxt-link>
+            })"
+          >
+            {{ i + 1 }}
+          </nuxt-link>
         </li>
       </ul>
     </div>
@@ -36,15 +42,6 @@ export default {
   data: () => ({
     postsPerPage: 15
   }),
-  async asyncData ({ app }) {
-    try {
-      const response = await app.$axios.get('posts')
-      const posts = response.data
-      return { posts }
-    } catch (error) {
-      return {}
-    }
-  },
   computed: {
     currentPage () {
       return this.$route.query.page || 1
@@ -57,6 +54,15 @@ export default {
     pagination () {
       const pagesCount = Math.ceil(this.posts.length / this.postsPerPage)
       return Array.from(Array(pagesCount).keys())
+    }
+  },
+  async asyncData ({ app }) {
+    try {
+      const response = await app.$axios.get('posts')
+      const posts = response.data
+      return { posts }
+    } catch (error) {
+      return {}
     }
   }
 }

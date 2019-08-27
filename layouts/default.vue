@@ -14,7 +14,7 @@
         <LangSwitcher />
       </nav>
     </header>
-    <nuxt/>
+    <nuxt />
   </div>
 </template>
 

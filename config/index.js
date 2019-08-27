@@ -2,7 +2,7 @@ const en = require('../lang/en-US.js')
 const fr = require('../lang/fr-FR.js')
 const es = require('../lang/es-ES.js')
 
-const API_ROOT = 'https://jsonplaceholder.typicode.com/';
+const API_ROOT = 'https://jsonplaceholder.typicode.com/'
 
 const I18N = {
   locales: [
