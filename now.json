@@ -3,7 +3,7 @@
   "builds": [
     {
       "src": "nuxt.config.js",
-      "use": "@nuxtjs/now-builder",
+      "use": "danielroe/now-builder#allow-node-10-dependencies",
       "config": {}
     }
   ]
