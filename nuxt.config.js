@@ -1,4 +1,5 @@
-const { API_ROOT, I18N } = require('./config')
+const path = require('path')
+const { API_ROOT, I18N } = require(path.join(__dirname, 'config'))
 
 module.exports = {
   /*
