@@ -4,7 +4,12 @@
     {
       "src": "nuxt.config.js",
       "use": "danielroe/now-builder#allow-node-10-dependencies",
-      "config": {}
+      "config": {
+        "serverFiles": [
+          "config/**",
+          "lang/**"
+        ]
+      }
     }
   ]
 }
