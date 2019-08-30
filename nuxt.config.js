@@ -1,47 +1,33 @@
-const path = require('path')
-const { API_ROOT, I18N } = require(path.join(__dirname, 'config'))
+import { API_ROOT, I18N } from './config'
 
-module.exports = {
+export default {
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
-    title: 'nuxt-i18n-example',
+    title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js project' }
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
-  },
-  /*
-  ** Customize the progress bar color
-  */
-  loading: { color: '#fff' },
-  /*
-  ** Build configuration
-  */
-  build: {
-    /*
-    ** Run ESLint on save
-    */
-    extend (config, ctx) {
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
+      {
+        hid: 'description',
+        name: 'description',
+        content: process.env.npm_package_description || ''
       }
-    }
+    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
+  /*
+   ** Customize the progress bar color
+   */
+  loading: { color: '#fff' },
   modules: [
     ['nuxt-i18n', I18N],
-    ['@nuxtjs/axios', {
-      baseURL: API_ROOT
-    }]
+    [
+      '@nuxtjs/axios',
+      {
+        baseURL: API_ROOT
+      }
+    ]
   ]
 }

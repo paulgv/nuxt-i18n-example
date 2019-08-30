@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   home: 'Homepage',
   posts: 'Posts',
   about: 'About us',

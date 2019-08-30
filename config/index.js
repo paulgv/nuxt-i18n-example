@@ -1,10 +1,10 @@
-const en = require('../lang/en-US.js')
-const fr = require('../lang/fr-FR.js')
-const es = require('../lang/es-ES.js')
+import en from '../lang/en-US.js'
+import fr from '../lang/fr-FR.js'
+import es from '../lang/es-ES.js'
 
-const API_ROOT = 'https://jsonplaceholder.typicode.com/'
+export const API_ROOT = 'https://jsonplaceholder.typicode.com/'
 
-const I18N = {
+export const I18N = {
   locales: [
     {
       code: 'en',
@@ -24,11 +24,11 @@ const I18N = {
   ],
   defaultLocale: 'en',
   routes: {
-    'about': {
+    about: {
       fr: '/a-propos',
       en: '/about-us'
     },
-    'posts': {
+    posts: {
       fr: '/articles'
     },
     'post/_id': {
@@ -43,9 +43,4 @@ const I18N = {
     fallbackLocale: 'en',
     messages: { en, fr, es }
   }
-}
-
-module.exports = {
-  API_ROOT,
-  I18N
 }
