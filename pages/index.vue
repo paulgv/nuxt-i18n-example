@@ -9,7 +9,7 @@
         {{ $t('homepage.subtitle') }}
       </h2>
       <div class="links">
-        <a href="https://github.com/paulgv/nuxt-i18n" target="_blank" class="button--grey">GitHub</a>
+        <a href="https://github.com/nuxt-community/nuxt-i18n" target="_blank" class="button--grey">GitHub</a>
       </div>
     </div>
   </section>
