@@ -19,7 +19,7 @@
   "devDependencies": {
     "@nuxtjs/eslint-config": "1.1.2",
     "eslint": "6.4.0",
-    "eslint-loader": "3.0.0"
+    "eslint-loader": "3.0.1"
   },
   "engines": {
     "node": ">=10.x"
