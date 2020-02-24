@@ -15,6 +15,9 @@
       </nav>
     </header>
     <nuxt />
+    <div v-if="$nuxtI18nVersion" class="version">
+      nuxt-i18n v{{ $nuxtI18nVersion }}
+    </div>
   </div>
 </template>
 
@@ -87,7 +90,7 @@ header a {
 }
 
 .container {
-  min-height: 100vh;
+  min-height: 85vh;
   width: 70%;
   display: flex;
   justify-content: center;
@@ -123,5 +126,12 @@ header a {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+</style>
+
+<style scoped>
+.version {
+  margin-top: 30px;
+  text-align: center;
 }
 </style>

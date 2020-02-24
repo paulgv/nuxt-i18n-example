@@ -29,5 +29,8 @@ export default {
         baseURL: API_ROOT
       }
     ]
+  ],
+  plugins: [
+    { src: '~/plugins/version' }
   ]
 }

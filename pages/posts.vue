@@ -39,6 +39,15 @@
 
 <script>
 export default {
+  async asyncData ({ app }) {
+    try {
+      const response = await app.$axios.get('posts')
+      const posts = response.data
+      return { posts }
+    } catch (error) {
+      return {}
+    }
+  },
   data: () => ({
     postsPerPage: 15
   }),
@@ -54,15 +63,6 @@ export default {
     pagination () {
       const pagesCount = Math.ceil(this.posts.length / this.postsPerPage)
       return Array.from(Array(pagesCount).keys())
-    }
-  },
-  async asyncData ({ app }) {
-    try {
-      const response = await app.$axios.get('posts')
-      const posts = response.data
-      return { posts }
-    } catch (error) {
-      return {}
     }
   }
 }
