@@ -12,14 +12,14 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@nuxtjs/axios": "5.8.0",
-    "nuxt": "2.10.2",
-    "nuxt-i18n": "6.3.0"
+    "@nuxtjs/axios": "5.9.5",
+    "nuxt": "2.11.0",
+    "nuxt-i18n": "6.5.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "1.1.2",
-    "eslint": "6.6.0",
-    "eslint-loader": "3.0.2"
+    "eslint": "6.8.0",
+    "eslint-loader": "3.0.3"
   },
   "engines": {
     "node": ">=10.x"
