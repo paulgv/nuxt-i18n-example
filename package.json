@@ -17,7 +17,7 @@
     "nuxt-i18n": "6.10.1"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "2.0.2",
+    "@nuxtjs/eslint-config": "11.0.0",
     "eslint": "7.0.0",
     "eslint-loader": "4.0.2"
   },
